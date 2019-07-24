@@ -1,0 +1,101 @@
+$background: #ffffff;
+$text: Verdana,Geneva,Arial,sans-serif;
+.about-us {
+  background-color: $background;
+  position: relative;
+  padding: 8px 0 45px 0;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 30px;
+  
+}
+.about-us__text {
+  font-family: $text;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+.about-us__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.about-us__item {
+  position: relative;
+  padding: 68px 0 15px 0;
+}
+.about-us__item-text {
+  font-family: $text;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  &--ecology {
+    &::before {
+      top: 0;
+      left: 8px;
+      width: 32px;
+      height: 37px;
+      background-image: url(../img/icon-feature-flower.svg);
+      background-size: 32px 37px;
+    }
+  }
+  &--style {
+    &::before {
+      left: 0;
+      top: 0;
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-feature-money.svg");
+      background-size: 47px 27px;
+    }
+  }
+
+  &--likes {
+    &::before {
+      background-image: url("../img/icon-feature-heart.svg");
+      background-size: 33px 28px;
+      left: 7px;
+      top: 6px;
+      width: 33px;
+      height: 28px;
+      
+    }
+  }
+  &--handmade {
+    &::before {
+      background-image: url("../img/icon-feature-ball.svg");
+      background-size: 34px 34px;
+      left: 3px;
+      top: 3px;
+      width: 34px;
+      height: 34px;
+      
+    }
+  }
+  &--support {
+    &::before {
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-size: 54px 23px;
+      left: -5px;
+      top: 4px;
+      width: 54px;
+      height: 23px;
+    }
+  }
+  &--gift {
+    &::before {
+      background-image: url("../img/icon-feature-gift.svg");
+      background-size: 33px 32px;
+      left: 3px;
+      top: 2px;
+      width: 33px;
+      height: 32px;
+    }
+  }
+}

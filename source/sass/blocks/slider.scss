@@ -1,0 +1,30 @@
+$slider-border: #f1f1f1;
+$btn-border: #ececec;
+
+.slider {
+  width: 100%;
+  min-height: 50px;
+  font-size: 0; 
+  border: 1px solid $slider-border;
+  margin-bottom: 37px;
+}
+.slider__btn {
+  display: inline-block;
+  width: 50%;
+  min-height: 50px;
+  border: 1px solid $btn-border;
+  cursor: pointer;
+  font-size: 20px;
+  vertical-align: top;
+}
+.slider__btn--left {
+  background: url(../img/icon-left-arrow.svg) no-repeat;
+  background-position: center;
+}
+.slider__btn--right {
+  background: url(../img/icon-right-arrow.svg) no-repeat;
+  background-position: center;
+}
+.slider__btn--disabled {
+  cursor: not-allowed;
+}

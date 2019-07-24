@@ -1,0 +1,29 @@
+$table-text: "Open Sans",Arial,Helvetica,sans-serif;
+$color-text: #444444;
+$border-color: #ececec;
+.table-product {
+  margin-bottom: 30px;
+  width: 100%;
+  border-collapse: collapse;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444;
+  font-style: normal;
+  font-family: $table-text;
+  text-align: left;
+  color: $color-text;
+  font-size: .875rem;
+}
+.table-product__type {
+	border-bottom: 1px solid $border-color;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+.table-product__value {
+	padding-left: 14px;
+	border-bottom: 1px solid $border-color;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}

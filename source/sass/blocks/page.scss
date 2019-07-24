@@ -1,0 +1,23 @@
+$text-title: Verdana,Geneva,Arial,sans-serif;
+$color-title: #231f20;
+$background-color: #f1f1f1;
+.page__catalog {
+    position: relative;
+	margin: 0 auto;
+    padding: 0 29px;
+    background: $background-color;
+    border: 1px solid transparent;
+}
+.page__wrapper {
+	padding-top: 70px;
+    padding-bottom: 76px;
+}
+.page__title {
+	font-family: $text-title;
+    font-weight: 700;
+    margin: 70px 0 76px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: $color-title;
+}

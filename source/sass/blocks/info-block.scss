@@ -1,0 +1,82 @@
+$text-title: Verdana,Geneva,Arial,sans-serif;
+$info-block-text: Tahoma,Arial,Helvetica,sans-serif;
+$color-text: #ffffff;
+$color-block: #f9f9f9;
+$background-accessories: #63d1bb;
+$background-toys: #56c3b2;
+.info-block {
+	position: relative;
+    background-color: $color-block;
+}
+.info-block__title {
+	flex: 0 0 200px;
+    font-family: $text-title;
+    font-weight: 700;
+    min-height: 212px;
+    margin: 0;
+    padding-top: 90px;
+    text-align: center;
+    color: #241f20;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -15%;
+}
+.info-block__cards {
+	display: flex;
+    flex-flow: row wrap;
+    flex: 1 0 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.info-block__card {
+	flex: 1 0 100%;
+}
+.info-block__card--accessories {
+	background: $background-accessories;
+	}
+.info-block__card--toys {
+	background: $background-toys;
+}
+.info-block__link {
+	display: block;
+    position: relative;
+  	padding: 26px 30px 29px;
+ 	font-size: 19px;
+  	font-weight: 700;
+  	text-decoration: none;
+}
+.info-block__link--interior::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/icon-interior.svg");
+	background-repeat: no-repeat;
+	width: 62px;
+    height: 62px;
+    right: 25px;
+    top: 10px;
+    opacity: .3;
+}
+.info-block__card--toys::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/icon-toy.svg");
+	background-repeat: no-repeat;
+	width: 62px;
+    height: 62px;
+    right: 35px;
+    top: 392px;
+    opacity: .3;
+}
+.info-block__text {
+	display: inline-block;
+    vertical-align: middle;
+    color: $color-text;
+    font-family: $info-block-text;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding-left: 0;
+}

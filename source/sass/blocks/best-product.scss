@@ -1,0 +1,77 @@
+$text-subtitle: Verdana,Geneva,Arial,sans-serif;
+$text-buy: Verdana,Geneva,Arial,sans-serif;
+$text-product: "Open Sans",Arial,Helvetica,sans-serif;
+$text-product-color: #444444;
+$title-color: #62d1ba;
+$text-color: #000000;
+.best-product {
+  position: relative;
+  padding-top: 27px;
+}
+.best-product:after {
+  content: "";
+  display: block;
+  height: 7px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: repeat-x;
+  background-size: 319px 100%;
+  transform: rotate(180deg);
+}
+.best-product__subtitle {
+  flex: 0 0 100%;
+  font-family: $text-subtitle;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: $text-color;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+.best-product__title {
+  font-family: $text-product;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $title-color;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-bottom: 12px;
+}
+.best-product__text {
+  font-family: $text-product;
+  text-align: left;
+  color: $text-product-color;
+  font-size: .875rem;
+}
+.best-product__wrapper {
+  flex: 1 0 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.best-product__buy {
+  font-family: $text-buy;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 26px;
+  line-height: 1.5rem;
+}
+.best-product__btn {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  text-align: center;
+}
+.best-product__img-wrapper {
+  margin: 0 auto;
+  width: 260px;
+  height: 315px;
+  overflow: hidden;
+}
+.best-product__img {
+  display: block;
+  width: 260px;
+  height: auto;
+}

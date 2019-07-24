@@ -1,0 +1,21 @@
+$footer-background: #f1f1f1;
+$social-border: #e5e5e5;
+.footer {
+  background: $footer-background;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  padding: 0 29px; 
+}
+.footer__social {
+  border-bottom: 1px solid $social-border;
+  padding: 26px 0 20px;
+  text-align: center;  
+}
+.footer__item {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer__icon {
+  margin-right: 18px;
+  margin-left: 12px;
+}

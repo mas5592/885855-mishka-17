@@ -1,0 +1,42 @@
+.header-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: flex-start;
+  width: auto;
+  min-height: 80px;
+  margin: 0 auto;
+}
+.header-block__logo {
+  margin: 22px 0 14px;
+  text-align: center;
+  display: block;
+}
+.header-block__logo--mobile {
+  display: block;
+  max-width: 86px;
+  height: 35px;
+}
+.header-block__burger {
+  background-image: url(../img/icon-menu-open.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  background-color: transparent;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  margin: 0;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header-block__burger--close {
+  background-image: url(../img/icon-menu-close.svg);
+  background-size: 20px;
+}

@@ -1,0 +1,48 @@
+$text-title: Verdana,Geneva,Arial,sans-serif;
+$comment-text: "Open Sans",Arial,Helvetica,sans-serif;
+$author-text: Verdana,Geneva,Arial,sans-serif;
+$address-text: "Open Sans",Arial,Helvetica,sans-serif;
+$color-text: #444444;
+.comment {
+  padding-bottom: 40px;
+  position: relative;
+  padding-top: 26px;
+}
+.comment__title {
+  font-family: $text-title;
+  font-weight: 700;
+  font-size: 1.5rem;  
+  margin-bottom: 24px;
+  line-height: 1.875rem;
+}
+.comment__blocks {
+  list-style: none;
+}
+.comment__block {
+  width: 100%;
+  min-height: 260px;
+}
+.comment__text {
+  font-family: $comment-text;
+  font-size: .875rem;
+  color: $color-text;
+  line-height: 1.875rem;
+  margin-bottom: 18px;
+}
+.comment__author {
+  font-family: $author-text;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+.comment__address {
+  font-family: $address-text;
+  font-weight: 400;
+  color: $color-text;
+  margin-bottom: 28px;
+  margin-top: 5px;
+  line-height: 1.875rem;
+}
+.comment__btn {
+  margin-top: 37px;
+}

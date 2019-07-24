@@ -1,0 +1,66 @@
+$text-title: Verdana,Geneva,Arial,sans-serif;
+$text-item: Open Sans,arial,sans-serif;
+$color-item: #444444;
+$mail-text: Open Sans,arial,sans-serif;
+$mail-color: #000000;
+.contact {
+  position: relative;
+  margin-bottom: 37px;
+}
+.contact__info {
+  margin: 0 auto;
+  padding: 0 29px;
+}
+.contact__title {
+  font-family: $text-title;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+.contact__address {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact__item {
+  display: flex;
+  flex-basis: auto;
+  flex-direction: row;
+  align-items: flex-start;
+  color: $color-item; 
+  font-family: $text-item;  
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 30px;
+  margin: 0 0 30px -1px;
+  padding: 0;  
+}
+.contact__type {
+  flex-basis: 30%;
+  margin: 0;
+  padding: 0;
+}
+.contact__mail {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: $mail-text; 
+  font-style: normal; 
+  line-height: 24px;
+  color: $mail-color;  
+}
+.contact__text {
+  flex-basis: 70%;
+  margin: 0;
+  padding: 0;
+  margin-left: -1px;
+  list-style: none;
+}
+.contact__btn {
+  max-width: 225px;
+}

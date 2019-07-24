@@ -1,0 +1,37 @@
+$copyright-text: Verdana,Geneva,Arial,sans-serif;
+$copyright-color: #000000;
+$color-logo: #46c1ae;
+
+.footer-copyright {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0 26px;
+  text-decoration: none;
+  text-align: center;
+  &:active {
+    opacity: 0.3;
+  }
+}
+.footer-copyright__text {
+  justify-content: center;
+  font-family: $copyright-text;
+  font-weight: 700;
+  font-size: 1.125rem;
+  vertical-align: middle;
+  color: $copyright-color;
+  line-height: 1.125rem;  
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-copyright__htmlacademy {
+  margin-left: 30px;
+  width: 27px;
+  height: 34px;
+  fill: $color-logo;
+}
