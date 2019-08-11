@@ -1,5 +1,7 @@
 $slider-border: #f1f1f1;
 $btn-border: #ececec;
+$tablet-width: 768px;
+$desktop-width: 1150px;
 
 .slider {
   width: 100%;
@@ -7,6 +9,20 @@ $btn-border: #ececec;
   font-size: 0; 
   border: 1px solid $slider-border;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    bottom: 164px;
+    width: 180px;
+    border: none;
+    margin-right: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 50px;
+    top: 310px;
+    left: 925px;
+  }
 }
 .slider__btn {
   display: inline-block;
@@ -16,14 +32,36 @@ $btn-border: #ececec;
   cursor: pointer;
   font-size: 20px;
   vertical-align: top;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 .slider__btn--left {
   background: url(../img/icon-left-arrow.svg) no-repeat;
   background-position: center;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .2;
+  }
+
 }
 .slider__btn--right {
   background: url(../img/icon-right-arrow.svg) no-repeat;
   background-position: center;
+
+  &:hover,
+  &:focus {
+    opacity: .6;
+  }
+  
+  &:active {
+    opacity: .2;
+  }
 }
 .slider__btn--disabled {
   cursor: not-allowed;

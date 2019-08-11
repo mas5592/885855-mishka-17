@@ -1,34 +1,133 @@
 $background: #ffffff;
 $text: Verdana,Geneva,Arial,sans-serif;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
 .about-us {
   background-color: $background;
   position: relative;
   padding: 8px 0 45px 0;
   width: auto;
   margin: 0 auto;
-  padding: 0 30px;
-  
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: $background;
+    background-image: none;
+    padding-top: 0;
+    margin-bottom: 90px;
+  }
+}
+.about-us__wapper {
+  margin: 0 auto;
+      width: auto;
+    margin: 0 auto;
+    padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: auto;
+    padding: 0 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    max-width: 1150px;
+    padding: 0 100px 30px 224px;
+  }
 }
 .about-us__text {
   font-family: $text;
   font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.875rem;
+  font-size: 25px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 67%;
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0;
+    padding: 30px 1px 47px 1px;
+  }
 }
 .about-us__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-basis: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    margin-left: 1px;
+  }
 }
 .about-us__item {
   position: relative;
   padding: 68px 0 15px 0;
+
+  @media (min-width: $tablet-width) {
+    flex: 1 0 49%;
+    padding-right: 1%;
+    margin-bottom: 23px;
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    padding-top: 34px;
+  }
+}
+.about-us__item:nth-of-type(1) {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+.about-us__item:nth-of-type(2) {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+.about-us__item:nth-of-type(3) {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+}
+.about-us__item:nth-of-type(4) {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+.about-us__item:nth-of-type(5) {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+.about-us__item:nth-of-type(6) {
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
 }
 .about-us__item-text {
   font-family: $text;
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 17px;
+  line-height: 20px;
 
   &::before {
     content: "";
@@ -97,5 +196,10 @@ $text: Verdana,Geneva,Arial,sans-serif;
       width: 33px;
       height: 32px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
   }
 }

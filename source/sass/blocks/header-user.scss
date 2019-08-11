@@ -1,0 +1,130 @@
+$text-link: Open Sans,arial,sans-serif;
+$color-border: #ececec;
+$color-text: #000000;
+$color-body: #ffffff;
+$color-shadow: #e5e5e5;
+$tablet-width: 768px;
+.header-user {
+  display: flex;
+  flex-shrink: 0;
+  flex-basis: auto;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: $text-link;
+  font-style: normal;
+  background-color: transparent;
+  box-sizing: border-box;
+  position: relative;
+  
+  @media (min-width: $tablet-width) {
+    order: -1;
+    justify-content: flex-end;
+    flex-basis: 100%;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    flex-basis: auto;
+    margin-right: 2px;
+  }
+
+  &::after {
+    content: none;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: calc(50vw - 575px);
+    height: 100%;
+    background-color: $color-body;
+  }
+
+  &--closed {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+}
+.header-user__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 26px 0 29px 75px;
+  background-color: transparent;
+  box-shadow: inset 0 -1px 0 0 $color-shadow;
+
+  @media (min-width: $tablet-width) {
+    min-width: 83px;
+    padding: 31px 0 34px 33px;
+    box-shadow: inset 1px 0 0 0 $color-shadow;
+  }
+}
+.header-user__link--svg {
+  content: "";
+  position: absolute;
+
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  left: 35px;
+  top: 30px;
+  fill: #d3d2d2;
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+    left: auto;
+  }
+}
+.header-user__link--svg:hover{
+  fill: #63d1bb;
+}
+.header-user__block--basket {
+  @media (min-width: $tablet-width) {
+    padding: 31px 0 34px 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 31px 1px 34px 82px; 
+  }
+}
+.header-user__link--cart {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 35px;
+  top: 110px;
+
+  @media (min-width: $tablet-width) {
+    left: auto;
+    top: 34px;
+    right: 200px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 20px;
+    height: 19px;
+    top: 34px;
+    right: 214px;
+  }
+}
+.header-user__link {
+  display: block;
+  color: $color-text;
+  text-decoration: none;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+}

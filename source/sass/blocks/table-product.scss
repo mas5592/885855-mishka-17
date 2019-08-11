@@ -1,6 +1,9 @@
 $table-text: "Open Sans",Arial,Helvetica,sans-serif;
 $color-text: #444444;
 $border-color: #ececec;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
 .table-product {
   margin-bottom: 30px;
   width: 100%;
@@ -12,13 +15,32 @@ $border-color: #ececec;
   font-family: $table-text;
   text-align: left;
   color: $color-text;
-  font-size: .875rem;
+  font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-width: 291px;
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 291px;
+    font-size: 15px;
+  }
 }
 .table-product__type {
 	border-bottom: 1px solid $border-color;
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 .table-product__value {
 	padding-left: 14px;
@@ -26,4 +48,8 @@ $border-color: #ececec;
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }

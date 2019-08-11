@@ -3,37 +3,121 @@ $comment-text: "Open Sans",Arial,Helvetica,sans-serif;
 $author-text: Verdana,Geneva,Arial,sans-serif;
 $address-text: "Open Sans",Arial,Helvetica,sans-serif;
 $color-text: #444444;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
 .comment {
-  padding-bottom: 40px;
   position: relative;
-  padding-top: 26px;
+  padding: 26px 30px 40px 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 60px 50px 127px 50px;
+    background-image: url("../img/review@1x.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position-x: 50px;
+    margin: 0 auto;
+    max-width: 1150px;
+    min-height: 476px;
+    padding: 55px 50px 0 223px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 320px 7px;
+    background-position-x: -8px;
+    background-repeat: repeat-x;
+
+    @media (min-width: $tablet-width) {
+      height: 17px;
+      background-size: 768px 17px;
+      background-position-x: -20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 525px;
+      left: 50px;
+      right: 50px;
+      height: 23px;
+      background-size: 1050px 21px;
+      background-position-x: -25px;
+    }
+  }
 }
 .comment__title {
   font-family: $text-title;
   font-weight: 700;
-  font-size: 1.5rem;  
-  margin-bottom: 24px;
-  line-height: 1.875rem;
+  font-size: 43px;  
+  line-height: 50px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    max-width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    width: 66.67%;
+  }
 }
 .comment__blocks {
   list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0;
 }
 .comment__block {
   width: 100%;
   min-height: 260px;
+
+  @media (min-width: $desktop-width) {
+    margin: 27px 3px;
+  }
+}
+.comment__block--show {
+  display: block;
 }
 .comment__text {
   font-family: $comment-text;
-  font-size: .875rem;
+  font-size: 15px;
   color: $color-text;
-  line-height: 1.875rem;
+  line-height: 30px;
   margin-bottom: 18px;
+  max-width: 770px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  @media (min-width: $desktop-width) { 
+    margin-bottom: 40px;
+  }
 }
 .comment__author {
   font-family: $author-text;
   font-size: .875rem;
   line-height: 1.5rem;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 .comment__address {
   font-family: $address-text;
@@ -44,5 +128,19 @@ $color-text: #444444;
   line-height: 1.875rem;
 }
 .comment__btn {
-  margin-top: 37px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 199px;
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    margin-right: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 80px;
+    width: 174px;
+  }
 }

@@ -1,6 +1,8 @@
 $copyright-text: Verdana,Geneva,Arial,sans-serif;
 $copyright-color: #000000;
 $color-logo: #46c1ae;
+$tablet-width: 768px;
+$desktop-width: 1150px;
 
 .footer-copyright {
   position: relative;
@@ -13,6 +15,14 @@ $color-logo: #46c1ae;
   text-align: center;
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 3px 0 0 0;
+    margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 1px;
   }
 }
 .footer-copyright__text {
@@ -27,11 +37,23 @@ $color-logo: #46c1ae;
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+}
 .footer-copyright__htmlacademy {
   margin-left: 30px;
   width: 27px;
   height: 34px;
   fill: $color-logo;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+    margin-right: -8px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    margin-right: -8px;
+  }
 }

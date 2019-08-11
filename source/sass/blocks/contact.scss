@@ -1,23 +1,69 @@
 $text-title: Verdana,Geneva,Arial,sans-serif;
 $text-item: Open Sans,arial,sans-serif;
 $color-item: #444444;
+$color-mail-bottom: #62d1ba;
 $mail-text: Open Sans,arial,sans-serif;
-$mail-color: #000000;
+$mail-color: #444444;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
 .contact {
   position: relative;
   margin-bottom: 37px;
+  padding-top: 34px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1050px;
+    background-image: url(../img/icon-flag.svg);
+    background-repeat: no-repeat;
+    background-position: 65px 114px;
+    margin: 0 auto;
+    padding-top: 52px;
+  }
 }
 .contact__info {
   margin: 0 auto;
   padding: 0 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 87%;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 30px 0;
+    flex: 0 0 31%;
+    margin-right: 0;
+    order: 1;
+  }
 }
 .contact__title {
   font-family: $text-title;
   font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.875rem;
+  font-size: 18px;
+  line-height: 30px;
   margin-top: 0;
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url(../img/icon-flag.svg);
+    background-repeat: no-repeat;
+    background-position: 99.5% 20px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 34px;
+    padding-bottom: 24px;
+    margin-left: -6px;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    background: 0 0;
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
 .contact__address {
   display: flex;
@@ -25,6 +71,14 @@ $mail-color: #000000;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    margin-left: 2px;
+  }
 }
 .contact__item {
   display: flex;
@@ -38,12 +92,32 @@ $mail-color: #000000;
   font-style: normal;
   line-height: 30px;
   margin: 0 0 30px -1px;
-  padding: 0;  
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: auto;
+    width: 50%;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    flex-basis: auto;
+    width: 100%;
+  }
 }
 .contact__type {
   flex-basis: 30%;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
+    flex-basis: 23.2%;
+    margin-left: 1px;
+  }
+  @media (min-width: $desktop-width) {
+    flex-basis: auto;
+    margin-right: 26px;
+  }
 }
 .contact__mail {
   display: block;
@@ -51,8 +125,24 @@ $mail-color: #000000;
   font-size: 15px;
   font-family: $mail-text; 
   font-style: normal; 
-  line-height: 24px;
-  color: $mail-color;  
+  line-height: 30px;
+  color: $mail-color;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $color-mail-bottom;
+  text-decoration: none;
+
+  &:hover {
+    color:  #46c1ae;
+    border-bottom-color: $color-mail-bottom;
+  }
+  &:active {
+    opacity: .3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    letter-spacing: -.1px;
+  }
 }
 .contact__text {
   flex-basis: 70%;
@@ -60,7 +150,66 @@ $mail-color: #000000;
   padding: 0;
   margin-left: -1px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: auto;
+    width: 50%;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 .contact__btn {
   max-width: 225px;
+  margin: 38px auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 12px 15px 10px;
+    order: 3;
+  }
+  @media (min-width: $desktop-width) {
+    order: 3;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding: 0;
+    margin-left: 175px;
+    width: 234px;
+  } 
+}
+.contact__btn--mobile {
+  @media (min-width: 1150px) {
+    display: none;
+  }
+}
+.contact__map {
+  position: relative;
+  margin-top: 31px;
+  background: url(../img/icon-map-pin.svg),url(../img/map-mobile@1x.jpg);
+  background-repeat: no-repeat,no-repeat;
+  background-size: auto,cover;
+  background-position: center,center;
+  height: 450px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    background: url(../img/icon-map-pin.svg),url(../img/map-tablet@1x.jpg);
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto,cover;
+    background-position: center,center;
+    height: 452px;
+  }
+  @media (min-width: $desktop-width) {
+    flex: 0 0 50%;
+    order: 2;
+    background: url(../img/icon-map-pin.svg),url(../img/map-desktop@1x.jpg);
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto,cover;
+    background-position: center,center;
+  }
+}
+.contact__map--iframe {
+  min-height: 450px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 452px;
+  }
 }

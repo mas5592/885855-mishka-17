@@ -1,3 +1,10 @@
+$color-border: #ececec;
+$color-body: #ffffff;
+$color-burger: #000000;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$color-shadow: #e5e5e5;
+
 .header-block {
   position: relative;
   display: flex;
@@ -7,36 +14,100 @@
   width: auto;
   min-height: 80px;
   margin: 0 auto;
+  padding: 22px 30px 22px 0;
+
+  @media (min-width: $tablet-width){
+    position: relative;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 17px;
+  }
 }
 .header-block__logo {
-  margin: 22px 0 14px;
-  text-align: center;
+  position: absolute;
   display: block;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  @media (max-width: $desktop-width - 1) and (min-width: $tablet-width) {
+    position: static;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+    padding-right: 2px;
+    transform: translate(0);
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
 }
 .header-block__logo--mobile {
   display: block;
+  width: 86px;
   max-width: 86px;
   height: 35px;
+
+  &:hover {
+    opacity: .6;
+    fill-opacity: .6;
+  }
+
+  &:active {
+    opacity: .2;
+    fill-opacity: .2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    max-width: 113px;
+    height: 46px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    max-width: 149px;
+    height: 74px;
+  }
 }
 .header-block__burger {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 22px;
+  height: 22px;
   background-image: url(../img/icon-menu-open.svg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: auto;
   background-color: transparent;
   border: none;
-  cursor: pointer;
-  position: absolute;
-  background-color: transparent;
-  width: 21px;
-  height: 21px;
-  padding: 0;
-  margin: 0;
-  right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    background-image: url(../img/icon-menu-close.svg);
+  }
 }
-.header-block__burger--close {
-  background-image: url(../img/icon-menu-close.svg);
-  background-size: 20px;
+.header-block__burger--js {
+  padding: 0;
+}
+.header-nav--no {
+  display: none;
 }

@@ -1,6 +1,4 @@
 $text-btn: "Open Sans",Arial,Helvetica,sans-serif;
-
-
 $color-w: #ffffff;
 $color-gr: #444444;
 $color-act: #7c7c7c;
@@ -9,9 +7,6 @@ $color-act: #7c7c7c;
   display: block;
   box-sizing: border-box;
   padding: 14px 10px;
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
   border: 2px solid $color-gr;
   font: inherit;
   font-size: 17px;
@@ -23,14 +18,12 @@ $color-act: #7c7c7c;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-
-  &:hover {
-    color: $color-w;
-    background-color: $color-gr;
-  }
-
-  &:active {
-    color: $color-act;
-    background-color: $color-gr;
-  }
+}
+.btn:hover {
+  color: $color-w;
+  background-color: $color-gr;
+}
+.btn:active {
+  color: $color-act;
+  background-color: $color-gr;
 }
