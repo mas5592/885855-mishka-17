@@ -1,0 +1,237 @@
+.about-us {
+  background-color: $white;
+  position: relative;
+  padding: 8px 0 45px 0;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: $white;
+    background-image: none;
+    padding-top: 0;
+    margin-bottom: 90px;
+  }
+}
+.about-us__wapper {
+  margin: 0 auto;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 28px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: auto;
+    padding: 0 45px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    max-width: 1150px;
+    padding: 0 100px 30px 224px;
+    margin-bottom: 0;
+  }
+}
+.about-us__text {
+  font-family: $text;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 4px 1px 10px 1px;
+
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 67%;
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0;
+    padding: 30px 1px 47px 1px;
+  }
+}
+.about-us__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+
+  @media (min-width: $tablet-width) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    margin-left: 1px;
+  }
+}
+.about-us__item {
+  position: relative;
+  padding: 55px 0 15px 0;
+
+  @media (min-width: $tablet-width) {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 49%;
+    flex: 1 0 49%;
+    padding-right: 1%;
+    margin-bottom: 23px;
+    padding-top: 58px;
+    padding-left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    padding-top: 54px;
+    margin-bottom: 30px;
+  }
+}
+.about-us__item:nth-of-type(1) {
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+.about-us__item:nth-of-type(2) {
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+}
+.about-us__item:nth-of-type(3) {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+}
+.about-us__item:nth-of-type(4) {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+.about-us__item:nth-of-type(5) {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+}
+.about-us__item:nth-of-type(6) {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+}
+.about-us__item-text {
+  font-family: $text;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+  &--ecology {
+    &::before {
+      top: 0;
+      left: 8px;
+      width: 32px;
+      height: 37px;
+      background-image: url(../img/icon-feature-flower.svg);
+      background-size: 32px 37px;
+    }
+  }
+  &--style {
+    &::before {
+      left: 0;
+      top: 0;
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-feature-money.svg");
+      background-size: 47px 27px;
+    }
+  }
+
+  &--likes {
+    &::before {
+      background-image: url("../img/icon-feature-heart.svg");
+      background-size: 33px 28px;
+      left: 7px;
+      top: 6px;
+      width: 33px;
+      height: 28px;
+    }
+  }
+  &--handmade {
+    &::before {
+      background-image: url("../img/icon-feature-ball.svg");
+      background-size: 34px 34px;
+      left: 3px;
+      top: 3px;
+      width: 34px;
+      height: 34px;
+    }
+  }
+  &--support {
+    &::before {
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-size: 54px 23px;
+      left: -5px;
+      top: 4px;
+      width: 54px;
+      height: 23px;
+    }
+  }
+  &--gift {
+    &::before {
+      background-image: url("../img/icon-feature-gift.svg");
+      background-size: 33px 32px;
+      left: 3px;
+      top: 2px;
+      width: 33px;
+      height: 32px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
