@@ -1,22 +1,17 @@
-$slider-border: #f1f1f1;
-$btn-border: #ececec;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-
 .slider {
   width: 100%;
   min-height: 50px;
-  font-size: 0; 
-  border: 1px solid $slider-border;
+  font-size: 0;
+  border: 1px solid $grey-light;
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     position: absolute;
-    right: 0;
-    bottom: 164px;
+    right: 49px;
+    bottom: 137px;
     width: 180px;
     border: none;
-    margin-right: 50px;
   }
   @media (min-width: $desktop-width) {
     margin-right: 50px;
@@ -42,13 +37,12 @@ $desktop-width: 1150px;
   background-position: center;
 
   &:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: .2;
+    opacity: 0.2;
   }
-
 }
 .slider__btn--right {
   background: url(../img/icon-right-arrow.svg) no-repeat;
@@ -56,11 +50,11 @@ $desktop-width: 1150px;
 
   &:hover,
   &:focus {
-    opacity: .6;
+    opacity: 0.6;
   }
-  
+
   &:active {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 .slider__btn--disabled {

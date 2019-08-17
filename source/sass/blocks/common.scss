@@ -1,15 +1,13 @@
-$mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-
 html {
-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 body {
   margin: 0;
@@ -40,8 +38,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
   width: 1px;
   height: 1px;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
-

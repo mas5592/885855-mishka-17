@@ -1,5 +1,8 @@
-@import "blocks/common.scss";
 @import "font-face.scss";
+@import "variables.scss";
+@import "text.scss";
+@import "color.scss";
+@import "blocks/common.scss";
 @import "blocks/header-block.scss";
 @import "blocks/header-nav.scss";
 @import "blocks/info-block.scss";
@@ -17,9 +20,7 @@
 @import "blocks/btn.scss";
 @import "blocks/product-video.scss";
 @import "blocks/form-page.scss";
-@import "blocks/variables.scss";
 @import "blocks/header-modal.scss";
 @import "blocks/header-user.scss";
-@import "blocks/contact-map.scss";
 @import "blocks/link.scss";
 @import "blocks/header-information.scss";

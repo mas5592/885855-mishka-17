@@ -1,19 +1,19 @@
-$text-title: Verdana,Geneva,Arial,sans-serif;
-$text-item: Open Sans,arial,sans-serif;
-$color-item: #444444;
-$color-mail-bottom: #62d1ba;
-$mail-text: Open Sans,arial,sans-serif;
-$mail-color: #444444;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-
 .contact {
   position: relative;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
   padding-top: 34px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    margin-bottom: 57px;
+  }
   @media (min-width: $desktop-width) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     max-width: 1050px;
     background-image: url(../img/icon-flag.svg);
@@ -21,6 +21,7 @@ $desktop-width: 1150px;
     background-position: 65px 114px;
     margin: 0 auto;
     padding-top: 52px;
+    padding-bottom: 50px;
   }
 }
 .contact__info {
@@ -29,23 +30,29 @@ $desktop-width: 1150px;
 
   @media (min-width: $tablet-width) {
     width: 87%;
-    padding: 0 50px;
+    padding: 0;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 24px 30px 0;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 31%;
     flex: 0 0 31%;
-    margin-right: 0;
+    margin: 3px 0 57px 140px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
 }
 .contact__title {
-  font-family: $text-title;
+  font-family: $text-card;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   margin-top: 0;
   margin-bottom: 26px;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     background-image: url(../img/icon-flag.svg);
@@ -66,55 +73,82 @@ $desktop-width: 1150px;
   }
 }
 .contact__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
   @media (min-width: $desktop-width) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-left: 2px;
+    min-width: 320px;
   }
 }
 .contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
-  color: $color-item; 
-  font-family: $text-item;  
+  color: $gray;
+  font-family: $text-item;
   font-weight: 400;
   font-size: 15px;
   font-style: normal;
   line-height: 30px;
-  margin: 0 0 30px -1px;
   padding: 0;
 
+  &--mail {
+    margin: 0 0 30px -1px;
+  }
   @media (min-width: $tablet-width) {
+    -ms-flex-preferred-size: auto;
     flex-basis: auto;
     width: 50%;
     font-size: 17px;
     line-height: 30px;
   }
   @media (min-width: $desktop-width) {
+    -ms-flex-preferred-size: auto;
     flex-basis: auto;
     width: 100%;
   }
 }
 .contact__type {
+  -ms-flex-preferred-size: 30%;
   flex-basis: 30%;
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) and (max-width: 1149px) {
+    -ms-flex-preferred-size: 23.2%;
     flex-basis: 23.2%;
     margin-left: 1px;
   }
   @media (min-width: $desktop-width) {
+    -ms-flex-preferred-size: auto;
     flex-basis: auto;
     margin-right: 26px;
   }
@@ -123,28 +157,28 @@ $desktop-width: 1150px;
   display: block;
   font-weight: 400;
   font-size: 15px;
-  font-family: $mail-text; 
-  font-style: normal; 
+  font-family: $mail-text;
+  font-style: normal;
   line-height: 30px;
-  color: $mail-color;
-  padding-bottom: 3px;
-  border-bottom: 1px solid $color-mail-bottom;
+  color: $gray;
+  border-bottom: 1px solid $aquamarine-bottom;
   text-decoration: none;
 
   &:hover {
-    color:  #46c1ae;
-    border-bottom-color: $color-mail-bottom;
+    color: #46c1ae;
+    border-bottom-color: $aquamarine-bottom;
   }
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
-    letter-spacing: -.1px;
+    letter-spacing: -0.1px;
   }
 }
 .contact__text {
+  -ms-flex-preferred-size: 70%;
   flex-basis: 70%;
   margin: 0;
   padding: 0;
@@ -152,28 +186,38 @@ $desktop-width: 1150px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    -ms-flex-preferred-size: auto;
     flex-basis: auto;
-    width: 50%;
+    width: 70%;
     font-size: 17px;
     line-height: 30px;
   }
 }
 .contact__btn {
-  max-width: 225px;
-  margin: 38px auto;
+  min-width: 259px;
+  max-width: 259px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 17px 12px 15px 10px;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
     order: 3;
+    min-width: 235px;
+    max-width: 235px;
   }
   @media (min-width: $desktop-width) {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
     order: 3;
     padding-right: 45px;
     padding-left: 45px;
     padding: 0;
     margin-left: 175px;
     width: 234px;
-  } 
+    position: absolute;
+    bottom: 104px;
+  }
 }
 .contact__btn--mobile {
   @media (min-width: 1150px) {
@@ -183,27 +227,33 @@ $desktop-width: 1150px;
 .contact__map {
   position: relative;
   margin-top: 31px;
-  background: url(../img/icon-map-pin.svg),url(../img/map-mobile@1x.jpg);
-  background-repeat: no-repeat,no-repeat;
-  background-size: auto,cover;
-  background-position: center,center;
+  background: url(../img/icon-map-pin.svg), url(../img/map-mobile@1x.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
+  background-position: center, center;
   height: 450px;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    background: url(../img/icon-map-pin.svg),url(../img/map-tablet@1x.jpg);
-    background-repeat: no-repeat,no-repeat;
-    background-size: auto,cover;
-    background-position: center,center;
+    background: url(../img/icon-map-pin.svg), url(../img/map-tablet@1x.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: center, center;
     height: 452px;
+    margin-bottom: 59px;
   }
   @media (min-width: $desktop-width) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
-    background: url(../img/icon-map-pin.svg),url(../img/map-desktop@1x.jpg);
-    background-repeat: no-repeat,no-repeat;
-    background-size: auto,cover;
-    background-position: center,center;
+    background: url(../img/icon-map-pin.svg), url(../img/map-desktop@1x.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: center, center;
   }
 }
 .contact__map--iframe {

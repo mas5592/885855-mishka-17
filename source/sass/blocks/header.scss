@@ -1,12 +1,5 @@
-$color-body: #ffffff;
-$color-shadow: #e5e5e5;
-$color-gray: #f1f1f1;
-$color-promo: #f9f9f9;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-
 .header {
-  background-color: $color-body;
+  background-color: $white;
   margin: 0;
   padding: 0;
   position: relative;
@@ -14,7 +7,8 @@ $desktop-width: 1150px;
   @media (min-width: $tablet-width) {
     min-height: 89px;
     overflow: visible;
-    box-shadow: inset 0 -1px 0 0 $color-shadow;
+    -webkit-box-shadow: inset 0 -1px 0 0 $shadow;
+    box-shadow: inset 0 -1px 0 0 $shadow;
   }
 }
 
@@ -27,7 +21,6 @@ $desktop-width: 1150px;
     max-width: 1150px;
     height: 1px;
     margin-left: -575px;
-    background-color: $color-shadow;
+    background-color: $shadow;
   }
 }
-    

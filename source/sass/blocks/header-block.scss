@@ -1,29 +1,33 @@
-$color-border: #ececec;
-$color-body: #ffffff;
-$color-burger: #000000;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-$color-shadow: #e5e5e5;
-
 .header-block {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   width: auto;
   min-height: 80px;
   margin: 0 auto;
   padding: 22px 30px 22px 0;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     position: relative;
     width: auto;
     padding: 0;
     margin: 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
-    padding-top: 17px;
+    padding-top: 21px;
   }
 }
 .header-block__logo {
@@ -32,7 +36,9 @@ $color-shadow: #e5e5e5;
   pointer-events: none;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
   @media (max-width: $desktop-width - 1) and (min-width: $tablet-width) {
     position: static;
@@ -41,6 +47,8 @@ $color-shadow: #e5e5e5;
     left: 0;
     padding-top: 0;
     padding-right: 2px;
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
     transform: translate(0);
   }
 
@@ -48,23 +56,25 @@ $color-shadow: #e5e5e5;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
-.header-block__logo--mobile {
+.header-block__logo-mobile {
   display: block;
   width: 86px;
   max-width: 86px;
   height: 35px;
 
   &:hover {
-    opacity: .6;
-    fill-opacity: .6;
+    opacity: 0.6;
+    fill-opacity: 0.6;
   }
 
   &:active {
-    opacity: .2;
-    fill-opacity: .2;
+    opacity: 0.2;
+    fill-opacity: 0.2;
   }
 
   @media (min-width: $tablet-width) {

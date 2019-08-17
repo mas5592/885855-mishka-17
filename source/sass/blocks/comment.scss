@@ -1,20 +1,17 @@
-$text-title: Verdana,Geneva,Arial,sans-serif;
-$comment-text: "Open Sans",Arial,Helvetica,sans-serif;
-$author-text: Verdana,Geneva,Arial,sans-serif;
-$address-text: "Open Sans",Arial,Helvetica,sans-serif;
-$color-text: #444444;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-
 .comment {
   position: relative;
-  padding: 26px 30px 40px 30px;
+  padding: 24px 29px 40px 29px;
 
   @media (min-width: $tablet-width) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
-    padding: 60px 50px 127px 50px;
+    padding: 60px 50px 75px 45px;
     background-image: url("../img/review@1x.jpg");
     background-position: left top;
     background-repeat: no-repeat;
@@ -58,12 +55,14 @@ $desktop-width: 1150px;
 .comment__title {
   font-family: $text-title;
   font-weight: 700;
-  font-size: 43px;  
-  line-height: 50px;
+  font-size: 25px;
+  line-height: 30px;
   margin-top: 4px;
   margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
     margin-top: 16px;
     margin-bottom: 10px;
     max-width: 300px;
@@ -86,7 +85,7 @@ $desktop-width: 1150px;
   min-height: 260px;
 
   @media (min-width: $desktop-width) {
-    margin: 27px 3px;
+    margin: 14px 3px 27px 3px;
   }
 }
 .comment__block--show {
@@ -95,52 +94,63 @@ $desktop-width: 1150px;
 .comment__text {
   font-family: $comment-text;
   font-size: 15px;
-  color: $color-text;
+  color: $gray;
   line-height: 30px;
   margin-bottom: 18px;
   max-width: 770px;
+  padding: 7px 1px 10px 1px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
-    margin-bottom: 10px;
+    margin-top: 35px;
+    margin-bottom: 47px;
   }
-  @media (min-width: $desktop-width) { 
-    margin-bottom: 40px;
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    max-width: 780px;
   }
 }
 .comment__author {
+  display: block;
+  margin-bottom: 3px;
   font-family: $author-text;
-  font-size: .875rem;
-  line-height: 1.5rem;
+  font-size: 17px;
+  line-height: 24px;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding-left: 4px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 27px 0 0 0;
   }
 }
 .comment__address {
   font-family: $address-text;
   font-weight: 400;
-  color: $color-text;
+  color: $gray;
   margin-bottom: 28px;
   margin-top: 5px;
   line-height: 1.875rem;
 }
+.comment-wapper {
+  margin-bottom: 10px;
+}
 .comment__btn {
-  margin: 0 auto;
   @media (min-width: $tablet-width) {
-    width: 199px;
-    margin: 0;
+    width: 178px;
     padding-right: 0;
     padding-left: 0;
     position: absolute;
     top: 70px;
     right: 0;
-    margin-right: 50px;
+    margin: 10px 50px 0 0;
   }
   @media (min-width: $desktop-width) {
     top: 80px;
     width: 174px;
+    margin: 0 50px 0 0;
   }
 }

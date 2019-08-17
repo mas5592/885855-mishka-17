@@ -1,13 +1,3 @@
-$text-title: Verdana,Geneva,Arial,sans-serif;
-$info-block-text: Tahoma,Arial,Helvetica,sans-serif;
-$color-text: #ffffff;
-$color-block: #f9f9f9;
-$color-info: #241f20;
-$background-accessories: #63d1bb;
-$background-toys: #56c3b2;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-
 .info-block {
   position: relative;
   background-color: $color-block;
@@ -35,7 +25,7 @@ $desktop-width: 1150px;
     background-position: 50% 100%;
     bottom: -10px;
     left: 0;
-    padding-top: 4%;
+    padding-top: 5%;
     height: 20px;
   }
   @media (min-width: $desktop-width) {
@@ -49,28 +39,32 @@ $desktop-width: 1150px;
   }
 }
 .info-block__title {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 200px;
   flex: 0 0 200px;
   font-family: $text-title;
   font-weight: 700;
   min-height: 212px;
   margin: 0;
-  padding-top: 90px;
+  padding: 70px 5px 122px 10px;
   text-align: center;
   color: $color-info;
   font-size: 25px;
   line-height: 30px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -15%;
-  height: 302px;
+  background-position: 49.7% 20%;
+  height: 282px;
 
   @media (min-width: $tablet-width) and (max-width: 1149px) {
     margin-left: 0;
-    font-size: 43px;
+    font-size: 40px;
     line-height: 50px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    height: 745px;
-    padding-top: 152px;
+    background-position: 50% 1%;
+    background-size: 1150px 627px;
+    height: 627px;
+    padding: 152px 40px 122px 50px;
   }
   @media (min-width: $desktop-width) {
     font-size: 53px;
@@ -82,13 +76,21 @@ $desktop-width: 1150px;
   }
 }
 .info-block__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   list-style: none;
   padding: 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     width: 100%;
     min-width: 668px;
@@ -102,9 +104,12 @@ $desktop-width: 1150px;
 }
 .info-block__card {
   width: 100%;
+  -ms-flex-preferred-size: auto;
   flex-basis: auto;
 
-    &:hover {
+  &:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
     transform: translateY(-5px);
 
     &::before {
@@ -114,21 +119,23 @@ $desktop-width: 1150px;
   }
 }
 .info-block__card--accessories {
-  background: $background-accessories;
-  }
+  background: $aquamarine;
+}
 .info-block__card--toys {
-  background: $background-toys;
+  background: $aquamarine-dark;
 }
 .info-block__link {
-  display: block;
+  display: inline-block;
   position: relative;
-  padding: 28px 34px 29px 34px;
+  padding: 25px 30px 29px 30px;
   font-size: 19px;
+  line-height: 24px;
   font-weight: 700;
   text-decoration: none;
+  width: 100%;
 
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 .info-block__link--interior::before {
@@ -139,7 +146,7 @@ $desktop-width: 1150px;
   width: 62px;
   height: 62px;
   right: 15px;
-  opacity: .2;
+  opacity: 0.2;
 }
 .info-block__link--toy::before {
   content: "";
@@ -149,13 +156,13 @@ $desktop-width: 1150px;
   position: absolute;
   width: 62px;
   height: 62px;
-  right: 35px;
-  opacity: .2;
+  right: 25px;
+  opacity: 0.2;
 }
 .info-block__text {
   display: inline-block;
   vertical-align: middle;
-  color: $color-text;
+  color: $white;
   font-family: $info-block-text;
   font-size: 1.125rem;
   line-height: 1.5rem;
@@ -168,5 +175,9 @@ $desktop-width: 1150px;
   }
 }
 .info-block__transfer {
-  display: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

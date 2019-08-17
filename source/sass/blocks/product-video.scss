@@ -1,15 +1,17 @@
-$calor-video: #62d1ba;
-$tablet-width: 768px;
-$desktop-width: 1150px;
-
 .video {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
   padding-top: 20px;
-  border: 1px solid #ececec;
+  border: 1px solid $btn-border;
 
   @media (min-width: $tablet-width) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-top: 0;
   }
@@ -19,10 +21,12 @@ $desktop-width: 1150px;
   }
 
   &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
   &:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 .video__title {
@@ -38,6 +42,8 @@ $desktop-width: 1150px;
     position: absolute;
     left: 33px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 32px;
     height: 32px;
@@ -51,11 +57,13 @@ $desktop-width: 1150px;
 
     @media (min-width: $desktop-width) {
       left: 79px;
-        top: 0;
+      top: 0;
     }
   }
 
   @media (min-width: $tablet-width) {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
     margin-top: 37px;
     margin-bottom: 5px;
@@ -97,7 +105,7 @@ $desktop-width: 1150px;
   background-size: cover;
   width: 100%;
   height: auto;
-  background-color: $calor-video;
+  background-color: $aquamarine-bottom;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -117,13 +125,19 @@ $desktop-width: 1150px;
   cursor: pointer;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border: 0;
 
   &:hover {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+    -ms-transform: translate(-50%, -50%) scale(1.2);
     transform: translate(-50%, -50%) scale(1.2);
   }
   &:active {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+    -ms-transform: translate(-50%, -50%) scale(0.8);
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.8;
   }
@@ -133,6 +147,8 @@ $desktop-width: 1150px;
 
   @media (min-width: $tablet-width) {
     padding: 14px 40px 45px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
 
