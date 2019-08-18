@@ -1,0 +1,27 @@
+.btn {
+  font-family: $text-btn;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 14px 10px;
+  border: 2px solid $gray;
+  font-weight: 700;
+  line-height: 20px;
+  color: $gray;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-style: normal;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:hover {
+  color: $white;
+  background-color: $gray;
+}
+.btn:active {
+  color: $gray-dark;
+  background-color: $gray;
+}

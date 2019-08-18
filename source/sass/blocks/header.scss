@@ -1,0 +1,26 @@
+.header {
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 89px;
+    overflow: visible;
+    -webkit-box-shadow: inset 0 -1px 0 0 $shadow;
+    box-shadow: inset 0 -1px 0 0 $shadow;
+  }
+}
+
+.header::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 1150px;
+    max-width: 1150px;
+    height: 1px;
+    margin-left: -575px;
+    background-color: $shadow;
+  }
+}
