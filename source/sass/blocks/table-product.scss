@@ -9,10 +9,10 @@
   font-style: normal;
   font-family: $text;
   text-align: left;
-  color: $gray;
   font-size: 15px;
 
   @media (min-width: $tablet-width) {
+
     width: 100%;
     min-width: 291px;
     font-size: 15px;
@@ -20,24 +20,29 @@
   }
 
   @media (min-width: $desktop-width) {
+
     max-width: 291px;
     font-size: 15px;
     margin-bottom: 110px;
   }
 }
+
 .table-product__type {
   border-bottom: 1px solid $btn-border;
   padding-top: 9px;
   padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
+
     padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
+
     padding-right: 0;
   }
 }
+
 .table-product__value {
   border-bottom: 1px solid $btn-border;
   padding-top: 9px;
@@ -45,6 +50,7 @@
   padding-left: 15px;
 
   @media (min-width: $tablet-width) {
+
     padding-left: 0;
   }
 }

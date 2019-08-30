@@ -36,6 +36,7 @@
     }
   }
 }
+
 .info-block__wapper {
   display: flex;
   flex-direction: column;
@@ -46,7 +47,6 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: center -15%;
   background-repeat: no-repeat;
-  background-color: $grey-light;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -80,6 +80,7 @@
     }
   }
 }
+
 .info-block__title {
   box-sizing: border-box;
   margin-top: 0;
@@ -92,7 +93,6 @@
   color: $color-info;
   text-align: center;
   font-family: $text;
-  font-weight: 700;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -108,11 +108,12 @@
     margin-bottom: 342px;
   }
 }
+
 .info-block__cards {
   position: relative;
   list-style: none;
   width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 1px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -122,17 +123,20 @@
     padding-right: 48px;
     height: 120px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 48px;
     padding-right: 48px;
     height: auto;
   }
 }
+
 .info-block__card {
   @media (min-width: $tablet-width) {
     width: 50%;
   }
 }
+
 .info-block__link {
   position: relative;
   display: block;
@@ -181,6 +185,7 @@
       opacity: 0.1;
     }
   }
+
   &--toy {
     background-color: $aquamarine-dark;
 
@@ -229,6 +234,7 @@
     }
   }
 }
+
 .info-block__text {
   display: block;
   max-width: 120px;
@@ -247,6 +253,7 @@
     line-height: 30px;
   }
 }
+
 .info-block__transfer {
   display: block;
 

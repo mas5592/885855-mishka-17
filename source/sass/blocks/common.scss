@@ -1,25 +1,26 @@
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
+
 body {
   margin: 0;
   padding: 0;
   min-width: $mobile-width;
   font-family: $text;
 }
+
 .main {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -38,6 +39,7 @@ body {
     padding-right: 50px;
   }
 }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -48,14 +50,15 @@ input[type="radio"].visually-hidden {
   padding: 0;
   width: 1px;
   height: 1px;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
 svg:not(:root) {
   overflow: hidden;
 }
+
 svg,
 svg * {
   fill: inherit;

@@ -4,13 +4,8 @@
   padding-bottom: 44px;
 
   @media (min-width: $tablet-width) {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
     padding-top: 60px;
     padding-bottom: 76px;
@@ -32,8 +27,8 @@
     max-width: 1150px;
     min-height: 476px;
     padding: 55px 0 108px 225px;
-    background-position-x: 50px;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -62,6 +57,7 @@
     }
   }
 }
+
 .comment__title {
   font-family: $text;
   font-weight: 700;
@@ -84,12 +80,14 @@
     width: 66.67%;
   }
 }
+
 .comment__blocks {
   list-style: none;
   padding: 0;
   max-width: 900px;
   margin: 0;
 }
+
 .comment__block {
   width: 100%;
   min-height: 260px;
@@ -98,9 +96,11 @@
     margin: 14px 3px 27px 3px;
   }
 }
+
 .comment__block--show {
   display: block;
 }
+
 .comment__text {
   font-family: $text;
   font-size: 15px;
@@ -114,11 +114,13 @@
     margin-top: 15px;
     margin-bottom: 47px;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     max-width: 780px;
   }
 }
+
 .comment__author {
   display: block;
   margin-bottom: 3px;
@@ -131,10 +133,12 @@
     font-size: 18px;
     line-height: 24px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 27px 0 0 0;
   }
 }
+
 .comment__address {
   font-family: $text;
   font-size: 17px;
@@ -144,9 +148,11 @@
   margin-top: 3px;
   line-height: 30px;
 }
+
 .comment__wrapper {
   margin-bottom: 10px;
 }
+
 .comment__btn {
   @media (min-width: $tablet-width) {
     width: 178px;
@@ -157,6 +163,7 @@
     right: 0;
     margin: 10px 50px 0 0;
   }
+
   @media (min-width: $desktop-width) {
     top: 80px;
     width: 174px;

@@ -1,7 +1,6 @@
 .btn {
   font-family: $text;
   display: block;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 14px 12px;
   border: 2px solid $gray;
@@ -15,12 +14,13 @@
   font-size: 18px;
   font-style: normal;
   background-color: transparent;
-  cursor: pointer;
 }
+
 .btn:hover {
   color: $white;
   background-color: $gray;
 }
+
 .btn:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: $gray;

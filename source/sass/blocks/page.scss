@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
 }
+
 .page__catalog {
   position: relative;
   margin: 0 auto;
@@ -14,7 +15,8 @@
     padding-left: 34px;
   }
 }
-.page__catalog:after {
+
+.page__catalog::after {
   content: none;
   position: absolute;
   left: 0;
@@ -29,6 +31,7 @@
     background-size: 768px 24px;
     background-position-x: 0;
   }
+
   @media (min-width: $desktop-width) {
     bottom: -17px;
     left: -16px;
@@ -36,6 +39,7 @@
     background-size: 1150px 34px;
   }
 }
+
 .page__wrapper {
   padding-top: 68px;
   padding-bottom: 76px;
@@ -44,11 +48,13 @@
     padding-top: 72px;
     padding-bottom: 50px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 73px;
     padding-bottom: 70px;
   }
 }
+
 .page__title {
   font-family: $text;
   font-weight: 700;

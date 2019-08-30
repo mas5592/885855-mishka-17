@@ -7,13 +7,9 @@
     padding-top: 25px;
     margin-bottom: 57px;
   }
+
   @media (min-width: $desktop-width) {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     max-width: 1050px;
     background-image: url("../img/icon-flag.svg");
@@ -24,6 +20,7 @@
     padding-bottom: 103px;
   }
 }
+
 .contact__info {
   margin-bottom: 35px;
 
@@ -35,15 +32,12 @@
 
   @media (min-width: $desktop-width) {
     padding: 24px 30px 0;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 31%;
     flex: 0 0 31%;
     margin: 3px 0 57px 140px;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
     order: 1;
   }
 }
+
 .contact__title {
   font-family: $text;
   font-weight: 700;
@@ -63,6 +57,7 @@
     padding-bottom: 24px;
     margin-left: -6px;
   }
+
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
@@ -71,45 +66,29 @@
     margin-left: 0;
   }
 }
+
 .contact__address {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
   }
+
   @media (min-width: $desktop-width) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     margin-left: 2px;
     min-width: 320px;
   }
 }
+
 .contact__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: auto;
   flex-basis: auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
   color: $gray;
   font-family: $text;
@@ -122,36 +101,36 @@
   &--mail {
     margin: 0 0 29px -1px;
   }
+
   @media (min-width: $tablet-width) {
-    -ms-flex-preferred-size: auto;
     flex-basis: auto;
     width: 50%;
     font-size: 17px;
     line-height: 30px;
   }
+
   @media (min-width: $desktop-width) {
-    -ms-flex-preferred-size: auto;
     flex-basis: auto;
     width: 100%;
   }
 }
+
 .contact__type {
-  -ms-flex-preferred-size: 30%;
   flex-basis: 30%;
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) and (max-width: 1149px) {
-    -ms-flex-preferred-size: 23.2%;
     flex-basis: 23.2%;
     margin-left: 1px;
   }
+
   @media (min-width: $desktop-width) {
-    -ms-flex-preferred-size: auto;
     flex-basis: auto;
     margin-right: 26px;
   }
 }
+
 .contact__mail {
   display: block;
   font-weight: 400;
@@ -164,9 +143,10 @@
   text-decoration: none;
 
   &:hover {
-    color: #46c1ae;
+    color: $aquamarine-dark--hover;
     border-bottom-color: $aquamarine-bottom;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -176,8 +156,8 @@
     letter-spacing: -0.1px;
   }
 }
+
 .contact__text {
-  -ms-flex-preferred-size: 70%;
   flex-basis: 70%;
   margin: 0;
   padding: 0;
@@ -185,13 +165,13 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    -ms-flex-preferred-size: auto;
     flex-basis: auto;
     width: 70%;
     font-size: 17px;
     line-height: 30px;
   }
 }
+
 .contact__btn {
   min-width: 259px;
   max-width: 259px;
@@ -199,19 +179,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 17px 12px 15px 10px;
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
     order: 3;
     min-width: 235px;
     max-width: 235px;
   }
+
   @media (min-width: $desktop-width) {
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
     order: 3;
-    padding-right: 45px;
-    padding-left: 45px;
-    padding: 0;
     margin-left: 175px;
     min-width: 230px;
     max-width: 230px;
@@ -219,6 +193,7 @@
     bottom: 102px;
   }
 }
+
 .contact__btn--mobile {
   @media (min-width: 1150px) {
     display: none;
@@ -238,8 +213,6 @@
     margin-bottom: 0;
     width: 525px;
     height: 457px;
-
-    -ms-flex-order: 2;
     order: 2;
   }
 }
