@@ -2,7 +2,6 @@
   background: $grey-light;
   border: 1px solid transparent;
   margin: 0 auto;
-  padding: 0 29px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -36,7 +35,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 44px 30px 44px 20px;
+    padding: 41px 63px 44px 48px;
   }
   @media (min-width: $desktop-width) {
     width: auto;
@@ -70,7 +69,16 @@
     margin-top: -8px;
   }
 }
-
+.footer__logo:hover,
+.footer__copyright:hover,
+.footer__icon:hover {
+  fill: $active-img;
+}
+.footer__copyright:active,
+.footer__logo:active,
+.footer__icon:active {
+  opacity: 0.3;
+}
 .footer__social {
   border-bottom: 1px solid $shadow;
   padding: 26px 0 20px;
@@ -86,13 +94,79 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border: none;
+    padding: 20px 0;
   }
 }
 .footer__item {
   display: inline-block;
   vertical-align: top;
 }
-.footer__icon {
-  margin-right: 18px;
+.footer__icon-svg {
+  width: 24px;
   margin-left: 12px;
+  margin-right: 18px;
+}
+.footer__copyright {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0 26px;
+  text-decoration: none;
+  text-align: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 1px;
+  }
+}
+.footer__copyright-text {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: $text;
+  font-weight: 700;
+  font-size: 19px;
+  vertical-align: middle;
+  color: $black;
+  line-height: 18px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__copyright-htmlacademy {
+  margin-left: 28px;
+  width: 27px;
+  height: 34px;
+  fill: $aquamarine;
+
+  &:hover {
+    fill: $aquamarine-dark--hover;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+    margin-right: -12px;
+    margin-left: 28px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 3px 2px 0 23px;
+  }
 }

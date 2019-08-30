@@ -16,17 +16,16 @@
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     max-width: 1050px;
-    background-image: url(../img/icon-flag.svg);
+    background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
     background-position: 65px 114px;
     margin: 0 auto;
     padding-top: 52px;
-    padding-bottom: 50px;
+    padding-bottom: 103px;
   }
 }
 .contact__info {
-  margin: 0 auto;
-  padding: 0 29px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 87%;
@@ -46,7 +45,7 @@
   }
 }
 .contact__title {
-  font-family: $text-card;
+  font-family: $text;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -55,7 +54,7 @@
   padding-top: 2px;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../img/icon-flag.svg);
+    background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
     background-position: 99.5% 20px;
     font-size: 43px;
@@ -113,7 +112,7 @@
   -ms-flex-align: start;
   align-items: flex-start;
   color: $gray;
-  font-family: $text-item;
+  font-family: $text;
   font-weight: 400;
   font-size: 15px;
   font-style: normal;
@@ -121,7 +120,7 @@
   padding: 0;
 
   &--mail {
-    margin: 0 0 30px -1px;
+    margin: 0 0 29px -1px;
   }
   @media (min-width: $tablet-width) {
     -ms-flex-preferred-size: auto;
@@ -157,9 +156,9 @@
   display: block;
   font-weight: 400;
   font-size: 15px;
-  font-family: $mail-text;
+  font-family: $text;
   font-style: normal;
-  line-height: 30px;
+  line-height: 26px;
   color: $gray;
   border-bottom: 1px solid $aquamarine-bottom;
   text-decoration: none;
@@ -214,9 +213,10 @@
     padding-left: 45px;
     padding: 0;
     margin-left: 175px;
-    width: 234px;
+    min-width: 230px;
+    max-width: 230px;
     position: absolute;
-    bottom: 104px;
+    bottom: 102px;
   }
 }
 .contact__btn--mobile {
@@ -224,42 +224,22 @@
     display: none;
   }
 }
+
 .contact__map {
-  position: relative;
-  margin-top: 31px;
-  background: url(../img/icon-map-pin.svg), url(../img/map-mobile@1x.jpg);
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto, cover;
-  background-position: center, center;
-  height: 450px;
-  margin-bottom: 50px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    background: url(../img/icon-map-pin.svg), url(../img/map-tablet@1x.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-size: auto, cover;
-    background-position: center, center;
-    height: 452px;
-    margin-bottom: 59px;
+    margin-bottom: 55px;
   }
+
   @media (min-width: $desktop-width) {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    -webkit-box-ordinal-group: 3;
+    position: absolute;
+    left: 55px;
+    margin-bottom: 0;
+    width: 525px;
+    height: 457px;
+
     -ms-flex-order: 2;
     order: 2;
-    background: url(../img/icon-map-pin.svg), url(../img/map-desktop@1x.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-size: auto, cover;
-    background-position: center, center;
-  }
-}
-.contact__map--iframe {
-  min-height: 450px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 452px;
   }
 }

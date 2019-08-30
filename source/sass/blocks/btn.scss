@@ -1,9 +1,9 @@
 .btn {
-  font-family: $text-btn;
+  font-family: $text;
   display: block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 14px 10px;
+  padding: 14px 12px;
   border: 2px solid $gray;
   font-weight: 700;
   line-height: 20px;
@@ -22,6 +22,6 @@
   background-color: $gray;
 }
 .btn:active {
-  color: $gray-dark;
+  color: rgba(255, 255, 255, 0.5);
   background-color: $gray;
 }

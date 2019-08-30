@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: $mobile-width;
+  font-family: $text;
 }
 .main {
   margin: 0;
@@ -21,11 +22,20 @@ body {
 }
 .container {
   margin: 0 auto;
-  padding: 0 29px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1150px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 90%;
-    max-width: 1050px;
+    padding-left: 48px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 .visually-hidden:not(:focus):not(:active),
@@ -42,4 +52,12 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+svg,
+svg * {
+  fill: inherit;
+  stroke: inherit;
 }
