@@ -2,3 +2,33 @@ $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
 $mobile-l-max-width: ($tablet-width - 1);
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$text: "Open Sans", arial, helvetica, sans-serif;
+$form-text: "Open Sans Regular", arial, helvetica, sans-serif;
+
+$black: #000000;
+$white: #ffffff;
+$gray: #444444;
+$grey-light: #f1f1f1;
+$aquamarine: #63d1bb;
+$aquamarine--hover: #59d5bc;
+$aquamarine-dark: #56c3b2;
+$aquamarine-dark--hover: #46c1ae;
+$input: #56c3b2;
+$border-input--hover: #62d1ba;
+$border-input--active: #c7c7c7;
+$shadow: #e5e5e5;
+$gray-dark: #7c7c7c;
+$color-img: #cccccc;
+$active-img: #62d1ba;
+$color-info: #241f20;
+$color-title: #231f20;
+$btn-border: #ececec;
+$aquamarine-bottom: #62d1ba;
+$color-logo: #46c1ae;
+$color-block: #f9f9f9;
+$color-svg: #d3d2d2;
+$color-svg-hover: #63d1bb;

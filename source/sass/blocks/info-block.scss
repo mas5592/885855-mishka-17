@@ -1,179 +1,259 @@
 .info-block {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
   background-color: $color-block;
 
-  @media (min-width: $desktop-width) {
-    padding: 7px 70px 0 77px;
-    position: relative;
-    background-image: url(../img/hero-desktop@1x.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 749px;
-    margin: 0 auto;
-    background-position: 50% 0;
-  }
-}
-
-.info-block::after {
   @media (min-width: $tablet-width) {
-    content: "";
+    padding-top: 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 92px;
+  }
+
+  &::after {
+    content: none;
     position: absolute;
-    display: block;
-    width: 100%;
+    left: 0;
+    right: 0;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-position: 50% 100%;
-    bottom: -10px;
-    left: 0;
-    padding-top: 5%;
-    height: 20px;
-  }
-  @media (min-width: $desktop-width) {
-    bottom: -19px;
-    height: 42px;
-    max-height: 42px;
-    padding-top: 0;
-    background-repeat: repeat-x;
-    background-position: 50% 50%;
-    background-size: 1250px 100%;
-  }
-}
-.info-block__title {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 200px;
-  flex: 0 0 200px;
-  font-family: $text-title;
-  font-weight: 700;
-  min-height: 212px;
-  margin: 0;
-  padding: 70px 5px 122px 10px;
-  text-align: center;
-  color: $color-info;
-  font-size: 25px;
-  line-height: 30px;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 49.7% 20%;
-  height: 282px;
 
-  @media (min-width: $tablet-width) and (max-width: 1149px) {
-    margin-left: 0;
-    font-size: 40px;
-    line-height: 50px;
-    background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: 50% 1%;
-    background-size: 1150px 627px;
-    height: 627px;
-    padding: 152px 40px 122px 50px;
-  }
-  @media (min-width: $desktop-width) {
-    font-size: 53px;
-    line-height: 57px;
-    width: auto;
-    padding: 145px 20px 475px 75px;
-    margin: 0 auto;
-    background-image: none;
+    @media (min-width: $tablet-width) {
+      content: "";
+      bottom: -12px;
+      height: 24px;
+      background-size: 768px 24px;
+      background-position-x: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -17px;
+      height: 34px;
+      background-size: auto 37px;
+      background-position-x: -10px;
+    }
   }
 }
-.info-block__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
+.info-block__wapper {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 67px 0 0;
+  min-height: 489px;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-position: center -15%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
+
+  @media (min-width: $mobile-l-max-width) {
+    min-height: 400px;
+  }
 
   @media (min-width: $tablet-width) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    width: 100%;
-    min-width: 668px;
-    min-height: 118px;
-    margin: 0 auto;
-    padding: 0 50px;
+    min-height: 650px;
+    padding-top: 58px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: center bottom;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
+
   @media (min-width: $desktop-width) {
-    max-width: 1150px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: center bottom;
+    height: 638px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 }
-.info-block__card {
+
+.info-block__title {
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 107px;
+  padding: 0 30px;
   width: 100%;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $color-info;
+  text-align: center;
+  font-family: $text;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 100px;
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 342px;
+  }
+}
+
+.info-block__cards {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 1px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 51px;
+    padding-right: 48px;
+    height: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 48px;
+    padding-right: 48px;
+    height: auto;
+  }
+}
+
+.info-block__card {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.info-block__link {
+  position: relative;
+  display: block;
+  padding: 26px 30px 29px;
+  color: $white;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 35px 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
 
   &:hover {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
     transform: translateY(-5px);
 
     &::before {
       bottom: -5px;
       height: 5px;
     }
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    &::after {
+      opacity: 0.1;
+    }
+  }
+
+  &--toy {
+    background-color: $aquamarine-dark;
+
+    &:hover,
+    &:active {
+      background-color: $aquamarine-dark--hover;
+    }
+
+    &::before {
+      background-color: $aquamarine-dark;
+    }
+
+    &::after {
+      width: 60px;
+      height: 60px;
+      right: 27px;
+      background-image: url("../img/icon-toy.svg");
+      background-size: 60px 60px;
+      opacity: 0.2;
+
+      @media (min-width: $tablet-width) {
+        right: 34px;
+      }
+    }
+  }
+
+  &--interior {
+    background-color: $aquamarine;
+
+    &:hover,
+    &:active {
+      background-color: $aquamarine--hover;
+    }
+
+    &::before {
+      background-color: $aquamarine;
+    }
+
+    &::after {
+      right: 36px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      background-size: 40px 62px;
+      opacity: 0.2;
+    }
   }
 }
-.info-block__card--accessories {
-  background: $aquamarine;
-}
-.info-block__card--toys {
-  background: $aquamarine-dark;
-}
-.info-block__link {
-  display: inline-block;
-  position: relative;
-  padding: 25px 30px 29px 30px;
+
+.info-block__text {
+  display: block;
+  max-width: 120px;
+  font-family: $text;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-  text-decoration: none;
-  width: 100%;
 
-  &:active {
-    opacity: 0.3;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
   }
-}
-.info-block__link--interior::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  width: 62px;
-  height: 62px;
-  right: 15px;
-  opacity: 0.2;
-}
-.info-block__link--toy::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/icon-toy.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 62px;
-  height: 62px;
-  right: 25px;
-  opacity: 0.2;
-}
-.info-block__text {
-  display: inline-block;
-  vertical-align: middle;
-  color: $white;
-  font-family: $info-block-text;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  font-weight: 700;
-  padding-left: 0;
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
   }
 }
+
 .info-block__transfer {
   display: block;
 

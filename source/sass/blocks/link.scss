@@ -1,5 +1,6 @@
 .link__text {
   display: block;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
