@@ -44,15 +44,15 @@ body {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-  overflow: hidden;
-  margin: -1px;
-  border: 0;
-  padding: 0;
   width: 1px;
   height: 1px;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
   white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 svg:not(:root) {
@@ -63,4 +63,13 @@ svg,
 svg * {
   fill: inherit;
   stroke: inherit;
+}
+
+.link:focus {
+  outline: 1px solid $blue;
+}
+
+.link {
+
+  cursor: pointer;
 }

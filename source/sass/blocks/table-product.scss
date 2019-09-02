@@ -23,17 +23,18 @@
 
     max-width: 291px;
     font-size: 15px;
-    margin-bottom: 110px;
+    margin-bottom: 109px;
   }
 }
 
 .table-product__type {
   border-bottom: 1px solid $btn-border;
   padding-top: 9px;
-  padding-bottom: 11px;
+  padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
-
+    padding-top: 7px;
+    padding-bottom: 11px;
     padding-right: 0;
   }
 
@@ -50,7 +51,8 @@
   padding-left: 15px;
 
   @media (min-width: $tablet-width) {
-
+    padding-bottom: 11px;
+    padding-top: 7px;
     padding-left: 0;
   }
 }

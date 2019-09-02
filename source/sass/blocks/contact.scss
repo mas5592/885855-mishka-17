@@ -1,11 +1,12 @@
 .contact {
   position: relative;
   margin-bottom: 40px;
-  padding-top: 34px;
+  padding-top: 32px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
-    margin-bottom: 57px;
+    padding-top: 28px;
+    padding-left: 1px;
+    margin-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,24 +18,26 @@
     background-position: 65px 114px;
     margin: 0 auto;
     padding-top: 52px;
-    padding-bottom: 103px;
+    padding-bottom: 104px;
   }
 }
 
 .contact__info {
-  margin-bottom: 35px;
+  padding-left: 28px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     width: 87%;
     padding: 0;
-    margin-bottom: 57px;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 24px 30px 0;
+    padding-left: 24px;
     flex: 0 0 31%;
-    margin: 3px 0 57px 140px;
+    margin: 3px 27px 57px 140px;
     order: 1;
+    max-width: 326px;
   }
 }
 
@@ -62,26 +65,31 @@
     font-size: 53px;
     line-height: 57px;
     background: 0 0;
-    margin-top: 10px;
-    margin-left: 0;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+    margin-top: 34px;
+    margin-left: 5px;
   }
 }
 
 .contact__address {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-left: 1px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin-left: -2px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    margin-left: 2px;
-    min-width: 320px;
+    margin: 0;
+    min-width: 330px;
+    padding-left: 10px;
+    width: 330px;
   }
 }
 
@@ -99,7 +107,7 @@
   padding: 0;
 
   &--mail {
-    margin: 0 0 29px -1px;
+    margin: 0 0 30px 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -107,6 +115,7 @@
     width: 50%;
     font-size: 17px;
     line-height: 30px;
+    margin-left: -1px;
   }
 
   @media (min-width: $desktop-width) {
@@ -137,10 +146,11 @@
   font-size: 15px;
   font-family: $text;
   font-style: normal;
-  line-height: 26px;
+  line-height: 29px;
   color: $gray;
   border-bottom: 1px solid $aquamarine-bottom;
   text-decoration: none;
+  letter-spacing: -0.1px;
 
   &:hover {
     color: $aquamarine-dark--hover;
@@ -172,25 +182,34 @@
   }
 }
 
+.contact__wapper-btn {
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    min-width: auto;
+    margin-left: 175px;
+    padding: 0;
+    order: 3;
+  }
+}
+
 .contact__btn {
-  min-width: 259px;
-  max-width: 259px;
-  margin: 0 auto;
+  min-width: 225px;
+  margin: 38px auto;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 17px 12px 15px 10px;
-    order: 3;
-    min-width: 235px;
-    max-width: 235px;
+    margin-top: 50px;
+    margin-bottom: 55px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 230px;
+    letter-spacing: -0.7px;
   }
 
   @media (min-width: $desktop-width) {
-    order: 3;
-    margin-left: 175px;
-    min-width: 230px;
-    max-width: 230px;
     position: absolute;
     bottom: 102px;
+    margin-bottom: 3px;
   }
 }
 
@@ -209,7 +228,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 55px;
+    left: 30px;
     margin-bottom: 0;
     width: 525px;
     height: 457px;
