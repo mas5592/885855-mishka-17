@@ -8,7 +8,8 @@
     flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 60px;
-    padding-bottom: 76px;
+    padding-left: 45px;
+    padding-bottom: 74px;
     background-image: url("../img/review@1x.jpg");
     background-position: left top;
     background-repeat: no-repeat;
@@ -17,7 +18,7 @@
       background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
       padding-top: 60px;
-      padding-bottom: 76px;
+      padding-bottom: 74px;
     }
   }
 
@@ -26,7 +27,7 @@
     margin: 0 auto;
     max-width: 1150px;
     min-height: 476px;
-    padding: 55px 0 108px 225px;
+    padding: 55px 0 108px 220px;
   }
 
   &::after {
@@ -69,7 +70,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    margin-top: 16px;
+    margin-top: 17px;
     margin-bottom: 28px;
     max-width: 300px;
   }
@@ -107,12 +108,14 @@
   color: $gray;
   line-height: 30px;
   margin-bottom: 18px;
-  padding: 7px 1px 10px 1px;
+  padding: 8px 1px 10px 1px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     margin-top: 15px;
     margin-bottom: 47px;
+    padding-left: 3px;
+    padding-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,13 +132,18 @@
   line-height: 24px;
   font-weight: 700;
 
+
   @media (min-width: $tablet-width) {
+    margin-left: 4px;
     font-size: 18px;
     line-height: 24px;
+    letter-spacing: 0.1px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 0 0 0;
+    padding: 29px 0 0 2px;
+    margin-left: 0;
+    letter-spacing: -0.5px;
   }
 }
 
@@ -147,10 +155,14 @@
   margin-bottom: 28px;
   margin-top: 3px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 4px;
+  }
 }
 
 .comment__wrapper {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .comment__btn {
@@ -161,7 +173,8 @@
     position: absolute;
     top: 70px;
     right: 0;
-    margin: 10px 50px 0 0;
+    margin: 9px 49px 0 0;
+    letter-spacing: -0.8px;
   }
 
   @media (min-width: $desktop-width) {

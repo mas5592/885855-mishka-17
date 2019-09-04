@@ -22,7 +22,7 @@
 
     @media (min-width: $tablet-width) {
       content: "";
-      bottom: -12px;
+      bottom: -10px;
       height: 24px;
       background-size: 768px 24px;
       background-position-x: 0;
@@ -30,9 +30,9 @@
 
     @media (min-width: $desktop-width) {
       bottom: -17px;
-      height: 34px;
+      height: 32px;
       background-size: auto 37px;
-      background-position-x: -10px;
+      background-position-x: -15px;
     }
   }
 }
@@ -42,7 +42,7 @@
   flex-direction: column;
   align-items: flex-end;
   box-sizing: border-box;
-  padding: 67px 0 0;
+  padding: 70px 0 0;
   min-height: 489px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: center -15%;
@@ -59,7 +59,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 650px;
-    padding-top: 58px;
+    padding-top: 56px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center bottom;
 
@@ -73,6 +73,7 @@
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center bottom;
     height: 638px;
+    padding-top: 60px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -105,7 +106,7 @@
     padding: 0 100px;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 342px;
+    margin-bottom: 343px;
   }
 }
 
@@ -119,14 +120,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 51px;
-    padding-right: 48px;
+    padding: 0 51px 0 50px;
     height: 120px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 49px;
+    padding-right: 49px;
     height: auto;
   }
 }
@@ -140,13 +140,8 @@
 .info-block__link {
   position: relative;
   display: block;
-  padding: 26px 30px 29px;
   color: $white;
   text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    padding: 33px 35px 40px;
-  }
 
   &::before {
     content: "";
@@ -188,6 +183,15 @@
 
   &--toy {
     background-color: $aquamarine-dark;
+    padding: 26px 30px 30px;
+
+    @media (min-width: $tablet-width) {
+      padding: 30px 29px 33px 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 28px 29px 33px 36px;
+    }
 
     &:hover,
     &:active {
@@ -209,11 +213,24 @@
       @media (min-width: $tablet-width) {
         right: 34px;
       }
+
+      @media (min-width: $desktop-width) {
+        right: 36px;
+      }
     }
   }
 
   &--interior {
     background-color: $aquamarine;
+    padding: 24px 29px 29px;
+
+    @media (min-width: $tablet-width) {
+      padding: 30px 29px 33px 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 28px 29px 33px 38px;
+    }
 
     &:hover,
     &:active {
@@ -245,7 +262,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 26px;
+    line-height: 28px;
   }
 
   @media (min-width: $desktop-width) {

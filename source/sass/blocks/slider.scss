@@ -3,21 +3,20 @@
   min-height: 50px;
   font-size: 0;
   border: 1px solid $grey-light;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     position: absolute;
-    bottom: 136px;
+    bottom: 133px;
     right: 48px;
     width: 180px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 50px;
     top: 310px;
-    left: 925px;
+    right: 47px;
     bottom: 187px;
   }
 }
