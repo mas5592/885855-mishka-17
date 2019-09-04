@@ -4,6 +4,7 @@ var BREAKPOINTS = {
   tablet: "768px",
   desktop: "1150px"
 };
+
 var toggleButton = document.querySelector(".header-block__burger--js"),
   mainNav = document.querySelector(".header__nav-bottom");
 function loadShow() {
@@ -16,11 +17,17 @@ function hideOnMedia(e) {
     mainNav.classList.add("header__nav-bottom-js");
   }
 }
+
+var mediaEvent = window.matchMedia("(min-width: " + BREAKPOINTS.tablet.toString() + ")");
+hideOnMedia(mediaEvent);
+mediaEvent.addListener(hideOnMedia);
+
+window.addEventListener("load", loadShow);
+
 toggleButton.addEventListener("click", function () {
   this.classList.toggle("header-block__burger--close");
   mainNav.classList.toggle("header__nav-bottom-js--active");
 });
-
 
 //Карта
 

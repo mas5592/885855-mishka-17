@@ -28,7 +28,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     max-width: 1150px;
-    padding: 44px 50px;
+    padding: 42px 50px 44px 50px;
   }
 }
 
@@ -44,6 +44,7 @@
     padding-right: 2px;
     padding-bottom: 7px;
     transform: translate(0);
+    cursor: pointer;
   }
 
   @media (min-width: 1150px) {
@@ -72,8 +73,7 @@
 }
 
 .footer__social {
-  border-bottom: 1px solid $shadow;
-  padding: 26px 0 20px;
+  padding: 23px 0 19px 2px;
   text-align: center;
   margin: 0;
 
@@ -81,13 +81,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -2px;
     transform: translate(-50%, -50%);
     border: none;
     padding: 20px 0;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 15px;
     padding-bottom: 11px;
   }
 }
@@ -95,12 +95,16 @@
 .footer__item {
   display: inline-block;
   vertical-align: top;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.footer__icon {
+  cursor: pointer;
 }
 
 .footer__icon-svg {
   width: 24px;
-  margin-left: 12px;
-  margin-right: 18px;
 }
 
 .footer__copyright {
@@ -108,13 +112,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 20px 0 26px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
   text-decoration: none;
-  text-align: center;
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 261px;
+    height: 1px;
+    background-color: $shadow;
+    bottom: 80px;
+
+    @media (min-width: $tablet-width) {
+      width: 0;
+      height: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -124,7 +144,6 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 1px;
-    padding-top: 4px;
   }
 }
 
@@ -143,22 +162,23 @@
 }
 
 .footer__copyright-htmlacademy {
-  margin-left: 28px;
+  margin-left: 29px;
+  margin-right: 3px;
   width: 27px;
   height: 34px;
   fill: $aquamarine;
+  padding-top: 2px;
 
   &:hover {
     fill: $aquamarine-dark--hover;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 6px;
-    margin-right: -12px;
-    margin-left: 28px;
+    margin-right: -14px;
+    margin-left: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 3px 2px 0 23px;
+    margin: 3px 2px 0 26px;
   }
 }
